@@ -1,0 +1,38 @@
+header {
+    height: 10vh;
+    width: 100vw;
+    background-color: #DBB688;
+}
+
+header .btn {
+    color: #342006;
+    border-color: #342006;
+}
+
+header .btn:hover {
+    color: #DBB688;
+    border-color: #342006;
+    background-color: #342006;
+    box-shadow: 0 0 0 0.10rem rgb(52 32 6 / 20%);
+}
+
+header .btn:active:hover {
+    color: #DBB688;
+    border-color: #342006;
+    background-color: #342006;
+    box-shadow: 0 0 0 0.15rem rgb(52 32 6 / 70%);
+}
+
+header .btn:active {
+    color: #DBB688;
+    border-color: #342006;
+    background-color: #342006;
+    box-shadow: 0 0 0 0.25rem rgb(52 32 6 / 50%);
+}
+
+header .btn:focus {
+    color: #DBB688;
+    border-color: #342006;
+    background-color: #342006;
+    box-shadow: 0 0 0 0.25rem rgb(52 32 6 / 50%);
+}
