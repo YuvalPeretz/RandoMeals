@@ -6,7 +6,7 @@ const Header = () => {
     const { t } = useTranslation();
 
     return (
-        <header>
+        <header className="d-flex justify-content-center">
             <button type="button" className="btn btn-outline-primary">{t("Download Recipes")}</button>
         </header>
     );

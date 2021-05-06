@@ -1,5 +1,5 @@
 header {
-    height: 10vh;
+    height: 7vh;
     width: 100vw;
     background-color: #DBB688;
 }
@@ -7,6 +7,7 @@ header {
 header .btn {
     color: #342006;
     border-color: #342006;
+    margin: auto;
 }
 
 header .btn:hover {
@@ -31,8 +32,8 @@ header .btn:active {
 }
 
 header .btn:focus {
-    color: #DBB688;
+    color: #342006;
     border-color: #342006;
-    background-color: #342006;
+    background-color: #DBB688;
     box-shadow: 0 0 0 0.25rem rgb(52 32 6 / 50%);
 }
