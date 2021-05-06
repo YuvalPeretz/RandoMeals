@@ -5,3 +5,10 @@
     color: #342006;
     font-family: 'Arvo', 'Heebo', 'Katibeh', sans-serif;
 }
+
+.seperator {
+    margin: 10px 0;
+    background-color: #342006;
+    height: 2px;
+    width: 90%;
+}

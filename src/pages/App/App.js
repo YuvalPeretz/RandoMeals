@@ -1,9 +1,9 @@
 import './App.css';
 import React, { useEffect } from "react"
-import { useTranslation } from 'react-i18next';
 import "../../components/i18n/configuration"
 import Header from '../../components/header/header-component';
 import cookies from "js-cookies"
+import MiddleMain from '../../components/middle/middle-main/middle-main-component';
 
 const App = () => {
 
@@ -18,11 +18,10 @@ const App = () => {
     }())
   });
 
-  const { t } = useTranslation();
-
   return (
     <div className="App">
       <Header />
+      <MiddleMain />
     </div>
   );
 }
