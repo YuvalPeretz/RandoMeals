@@ -1,0 +1,9 @@
+.globeIcon {
+    margin: auto;
+    fill: #342006;
+    width: 35px;
+}
+
+.globeIcon:hover {
+    cursor: pointer;
+}

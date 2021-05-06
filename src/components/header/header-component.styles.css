@@ -1,5 +1,6 @@
 header {
-    height: 7vh;
+    height: 8vh;
+    min-height: 50px;
     width: 100vw;
     background-color: #DBB688;
 }
@@ -8,6 +9,7 @@ header .btn {
     color: #342006;
     border-color: #342006;
     margin: auto;
+    font-size: 120%;
 }
 
 header .btn:hover {

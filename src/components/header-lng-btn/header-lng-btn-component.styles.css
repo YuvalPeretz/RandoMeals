@@ -1,0 +1,12 @@
+.lng-btn {
+    background-color: transparent;
+    border-color: transparent;
+    color: #342006;
+    width: 100%;
+    font-size: 120%;
+}
+
+.flag-icon {
+    transform: scale(1.5);
+    margin: 10%;
+}
