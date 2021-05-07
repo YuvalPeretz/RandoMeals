@@ -4,6 +4,7 @@ import "../../components/i18n/configuration"
 import Header from '../../components/header/header-component';
 import cookies from "js-cookies"
 import MiddleMain from '../../components/middle/middle-main/middle-main-component';
+import RecipesAdd from '../recipes-add/recipes-add';
 
 const App = () => {
 
@@ -18,8 +19,14 @@ const App = () => {
     }())
   });
 
+  function AddRecipe() {
+    if (window.location.pathname === "/recipesadd")
+      return <RecipesAdd />
+  }
+
   return (
     <div className="App">
+      {AddRecipe()}
       <Header />
       <MiddleMain />
     </div>

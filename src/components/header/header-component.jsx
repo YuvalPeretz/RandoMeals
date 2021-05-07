@@ -9,7 +9,7 @@ const Header = () => {
     return (
         <header className="d-flex justify-content-center">
             <div className="globeIcon"/>
-            <button type="button" className="btn btn-outline-primary">{t("Download Recipes")}</button>
+            <button type="button" className="btn btn-outline-primary">{t("Download_Recipes")}</button>
             <LanguageBtn/>
         </header>
     );

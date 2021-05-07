@@ -12,7 +12,7 @@ const QRScan = () => {
         <div id="qr-scan">
             <QRIcon id="qr-icon"/>
             <div className="d-flex">
-                <input type="text" className="form-control" placeholder={t("QR Code")} aria-label="QR Code" aria-describedby="button-addon2"></input>
+                <input type="text" className="form-control" placeholder={t("QR_Code")} aria-label="QR Code" aria-describedby="button-addon2"></input>
                 <SearchIcon type="button" id="search-btn" />
             </div>
         </div>

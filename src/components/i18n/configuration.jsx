@@ -18,5 +18,6 @@ i18next
             loadPath: "/locales/{{lng}}/translation.json"
         }
     }, (error) => {
-        console.log(error);
+        if(error)
+            console.log(error);
     });
