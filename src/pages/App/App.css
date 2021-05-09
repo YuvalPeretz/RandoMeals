@@ -1,14 +1,16 @@
 .App {
     width: 100vw;
-    height: 100vh;
-    background-color: #F2ded9;
+    height: 100%;
     color: #342006;
-    font-family: 'Arvo', 'Heebo', 'Katibeh', sans-serif;
+}
+
+.App-with-recipe {
+    height: 100%;
 }
 
 .seperator {
     margin: 10px 0;
     background-color: #342006;
     height: 2px;
-    width: 90%;
+    width: 100%;
 }

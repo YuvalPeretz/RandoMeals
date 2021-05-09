@@ -1,4 +1,14 @@
 #middle-main {
-    flex-direction: column;
     width: 100vw;
+}
+
+.middle-main {
+    width: 100%;
+    flex-direction: column;
+}
+
+.ad {
+    height: 100%;
+    width: 560px;
+    background-color: yellow;
 }

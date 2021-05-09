@@ -1,0 +1,8 @@
+#recipes-add {
+    height: 100vh;
+    width: 50vw;
+}
+
+#recipes-add .row {
+    margin: 10px 0;
+}

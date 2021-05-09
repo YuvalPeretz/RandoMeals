@@ -8,7 +8,7 @@
     height: 400px;
 }
 
-.form-control {
+#qr-scan .form-control {
     border-width: thick;
     border-color: #342006;
     border-radius: 0;
@@ -16,11 +16,11 @@
     text-align: center;
 }
 
-.form-control:active {
+#qr-scan .form-control:active {
     border-color: #342006;
 }
 
-.form-control:focus {
+#qr-scan .form-control:focus {
     border-color: #342006;
     box-shadow: 0 0 0 0.0rem rgb(52 32 6 / 25%);
 }

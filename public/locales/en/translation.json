@@ -1,5 +1,10 @@
 {
     "RandoMeals":"RandoMeals",
     "Download_Recipes":"Download Recipes",
-    "QR_Code":"QR Code"
+    "QR_Code":"QR Code",
+    "Ingredients":"Ingredients",
+    "Amount":"Amount",
+    "Ingredient_Name":"Ingredient Name",
+    "Preparation":"Preparation",
+    "Action_Name":"Action Name"
 }

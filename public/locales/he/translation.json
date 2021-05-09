@@ -1,5 +1,9 @@
 {
     "RandoMeals":"ארוחה בהפתעה",
     "Download_Recipes":"הורדת מתכונים",
-    "QR_Code":"קוד QR"
+    "QR_Code":"קוד QR",
+    "Ingredients":"מצרכים",
+    "Amount":"כמות",
+    "Ingredient_Name":"שם מצרך",
+    "Preparation":"אופן הכנה"
 }

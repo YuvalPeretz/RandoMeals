@@ -1,7 +1,7 @@
 import React from "react";
 import { useTranslation } from "react-i18next";
-import "./header-component.styles.css"
-import LanguageBtn from "../hedaer-lng/header-lng-component";
+import "./header-main-component.styles.css"
+import LanguageBtn from "../header-lng/header-lng-component";
 
 const Header = () => {
     const { t } = useTranslation();

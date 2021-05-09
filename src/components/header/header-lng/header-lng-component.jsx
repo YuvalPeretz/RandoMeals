@@ -1,5 +1,5 @@
 import React from "react";
-import { ReactComponent as GloveIcon } from "../../assets/icons/globe.svg"
+import { ReactComponent as GlobeIcon } from "../../../assets/icons/globe.svg";
 import LngBtn from "../header-lng-btn/header-lng-btn-component";
 import "./header-lng-component.styles.css"
 
@@ -28,7 +28,7 @@ const LanguageBtn = () => {
 
     return (
         <div className="btn-group globeIcon">
-            <GloveIcon data-bs-toggle="dropdown" aria-expanded="false" />
+            <GlobeIcon data-bs-toggle="dropdown" aria-expanded="false" />
             <ul className="dropdown-menu">
                 {Object.keys(Lngs).map(lang => {
                     return (

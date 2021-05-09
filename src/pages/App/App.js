@@ -1,10 +1,10 @@
 import './App.css';
 import React, { useEffect } from "react"
 import "../../components/i18n/configuration"
-import Header from '../../components/header/header-component';
+import Header from '../../components/header/header-main/header-main-component.jsx';
 import cookies from "js-cookies"
 import MiddleMain from '../../components/middle/middle-main/middle-main-component';
-import RecipesAdd from '../recipes-add/recipes-add';
+import RecipesAdd from '../recipes-add/recipe-add/recipes-add.jsx';
 
 const App = () => {
 
@@ -20,7 +20,7 @@ const App = () => {
   });
 
   function AddRecipe() {
-    if (window.location.pathname === "/recipesadd")
+    if (window.location.pathname === "/yprecipesadd")
       return <RecipesAdd />
   }
 
