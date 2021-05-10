@@ -5,6 +5,7 @@
     "Ingredients":"Ingredients",
     "Amount":"Amount",
     "Ingredient_Name":"Ingredient Name",
-    "Preparation":"Preparation",
-    "Action_Name":"Action Name"
+    "Preparations":"Preparations",
+    "Action_Name":"Action Name",
+    "Recipe_Title":"Recipe Title"
 }

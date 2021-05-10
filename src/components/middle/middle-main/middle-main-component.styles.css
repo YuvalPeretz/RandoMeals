@@ -10,5 +10,6 @@
 .ad {
     height: 100%;
     width: 560px;
+    min-width: 50px;
     background-color: yellow;
 }

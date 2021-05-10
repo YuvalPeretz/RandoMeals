@@ -1,8 +1,29 @@
 header {
-    height: 8vh;
-    min-height: 50px;
+    height: 100%;
     width: 100vw;
+    min-width: 100vw;
     background-color: #DBB688;
+}
+
+header .col {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+header .title {
+    font-weight: bold;
+    font-style: italic;
+    transition: text-shadow 0.25s;
+    text-shadow: 2px 2px #F2DED9;
+    margin: auto;
+    align-self: center;
+    font-size: 60px;
+}
+
+header .title:hover {
+    transition: text-shadow 0.25s;
+    text-shadow: 4px 4px #F2DED9;
 }
 
 header .btn {

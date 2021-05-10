@@ -10,7 +10,7 @@ const PreparationAddRow = ({ id }) => {
         const ingsRender = []
         for (let i = 0; i < ings; i++) {
             ingsRender.push(<input
-                id={`PAR-AMT-${id}`}
+                id={`PAR-ACT-${id}-ING-${i}`}
                 type="text"
                 className="form-control"
                 placeholder={t("Ingredient To Use")}
@@ -25,7 +25,7 @@ const PreparationAddRow = ({ id }) => {
     return (
         <div id="preperation-instructions" className="row">
             <div className="d-flex">
-                <input id={`PAR-ING-${id}`} type="text" className="form-control" placeholder={t("Action_Name")} aria-label="Ingredient Name" aria-describedby="basic-addon1" />
+                <input id={`PAR-ACT-${id}`} type="text" className="form-control" placeholder={t("Action_Name")} aria-label="Ingredient Name" aria-describedby="basic-addon1" />
                 {IngredientsRender()}
                 <button type="button" className="btn btn-success" onClick={() => { setIngs(ings + 1) }}>+</button>
             </div>

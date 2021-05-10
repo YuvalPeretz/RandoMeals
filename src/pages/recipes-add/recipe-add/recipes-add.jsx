@@ -1,5 +1,5 @@
-import { useTranslation } from 'react-i18next';
 import React, { useEffect, useState } from "react"
+import { useTranslation } from 'react-i18next';
 import IngredientAddRow from "../ingredient-add-row/ingredient-add-row-component"
 import "./recipes-add.styles.css"
 import PreparationAddRow from '../preparation-add-row/preparation-add-row-component';
@@ -16,7 +16,7 @@ const RecipesAdd = () => {
 
     const { t } = useTranslation();
 
-    async function SetVals() {
+    async function GetLangs() {
         await fetch("/locales/en/translation.json")
             .then(lng => lng.json())
             .then(json => setLngs(prevState => ({ ...prevState, en: json })))
@@ -45,12 +45,37 @@ const RecipesAdd = () => {
     }
 
     function AddRecipe() {
+        const newRecipe = {
+            Title: document.getElementById("recipe-title").value,
+            Ingredients: [],
+            Preperations: []
+        }
+        let newPreperation = ""
+        for (let i = 0; i < ings; i++) {
+            newRecipe.Ingredients.push([document.getElementById(`IAR-ING-${i}`).value, document.getElementById(`IAR-AMT-${i}`).value])
+        }
+        for (let i = 0; i < prep; i++) {
+            newPreperation = [document.getElementById(`PAR-ACT-${i}`).value, []]
+            const prepIngs = [];
+            let ingIndex = 0;
+            while (document.getElementById(`PAR-ACT-${i}-ING-${ingIndex}`) !== null) {
+                prepIngs.push(document.getElementById(`PAR-ACT-${i}-ING-${ingIndex}`).value)
+                ingIndex++;
+            }
+            newPreperation[1] = prepIngs;
+            newRecipe.Preperations.push(newPreperation);
+        }
+        console.log(newRecipe);
     }
 
-    useEffect(() => { SetVals() }, [])
+    useEffect(() => { GetLangs() }, [])
 
     return (
         <div id="recipes-add" className="container">
+            <div className="row">
+                {`${t("Recipe_Title")}`}:
+                <input id="recipe-title" type="text" className="form-control" placeholder={`${t("Recipe_Title")}`} aria-label={`${t("Recipe_Title")}`} aria-describedby="basic-addon1" />
+            </div>
             <div id="ingredients" className="row">
                 {t("Ingredients")}:
                 <div className="container">
@@ -65,12 +90,12 @@ const RecipesAdd = () => {
                     </div>
                 </div>
             </div>
-            <div className="row">
-                {t("Preparation")}:
+            <div id="preparations" className="row">
+                {t("Preparations")}:
                 <div className="container">
                     {PreperationsRender()}
                     <div className="row container">
-                    <div className="col">
+                        <div className="col">
                             <button onClick={() => setPrep(prep - 1)} type="button" className="btn btn-danger">Remove Last</button>
                         </div>
                         <div className="col">

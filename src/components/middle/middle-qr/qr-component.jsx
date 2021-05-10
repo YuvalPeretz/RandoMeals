@@ -9,9 +9,9 @@ const QRScan = () => {
     const { t } = useTranslation();
 
     return (
-        <div id="qr-scan">
+        <div id="qr-scan" className="d-flex">
             <QRIcon id="qr-icon"/>
-            <div className="d-flex">
+            <div id="qr-search" className="d-flex">
                 <input type="text" className="form-control" placeholder={t("QR_Code")} aria-label="QR Code" aria-describedby="button-addon2"></input>
                 <SearchIcon type="button" id="search-btn" />
             </div>
