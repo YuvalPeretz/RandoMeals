@@ -34,7 +34,3 @@ const App = () => {
 }
 
 export default App;
-
-/*
-mongodb+srv://randomeals:itsallfood@randomealscluster0.9zbth.mongodb.net/myFirstDatabase?retryWrites=true&w=majority
-*/
