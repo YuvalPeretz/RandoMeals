@@ -1,5 +1,5 @@
-import './App.css';
 import React, { useEffect } from "react"
+import './App.css';
 import "../../components/i18n/configuration"
 import Header from '../../components/header/header-main/header-main-component.jsx';
 import cookies from "js-cookies"
@@ -34,6 +34,7 @@ const App = () => {
 }
 
 export default App;
+
 /*
-  <h2>{t('RandoMeals')}</h2>
+mongodb+srv://randomeals:itsallfood@randomealscluster0.9zbth.mongodb.net/myFirstDatabase?retryWrites=true&w=majority
 */
