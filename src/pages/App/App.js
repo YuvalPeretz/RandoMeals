@@ -24,6 +24,10 @@ const App = () => {
       return <RecipesAdd />
   }
 
+  (async function DBTest() {
+    await fetch("/").then(res => res.text()).then(text => console.log(text))
+  }())
+
   return (
     <div className="App">
       {AddRecipe()}
