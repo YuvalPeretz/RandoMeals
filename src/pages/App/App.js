@@ -24,22 +24,6 @@ const App = () => {
       return <RecipesAdd />
   }
 
-  /*async function AddItem() {
-    await fetch("http://localhost:3001/addrecipe",
-    {
-      method: "set",
-      headers: {
-        "Accept": "application.json",
-        "Content-Type": "application.json"
-      },
-      cache: "no-cache",
-      body: JSON.stringify() //here you send the object
-    })
-      .then(res => res.json())
-      .then(json => console.log(json))
-  }
-  */
-
   return (
     <div className="App">
       {AddRecipe()}

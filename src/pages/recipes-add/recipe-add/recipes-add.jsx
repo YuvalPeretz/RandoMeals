@@ -44,7 +44,7 @@ const RecipesAdd = () => {
         return prepRender;
     }
 
-    function AddRecipe() {
+    async function AddRecipe() {
         const newRecipe = {
             Title: document.getElementById("recipe-title").value,
             Ingredients: [],
@@ -65,7 +65,16 @@ const RecipesAdd = () => {
             newPreperation[1] = prepIngs;
             newRecipe.Preperations.push(newPreperation);
         }
-        console.log(newRecipe);
+        await fetch("http://localhost:3001/addrecipe",
+            {
+                method: "POST",
+                headers: {
+                    "Accept": "application/json",
+                    "Content-Type": "application/json"
+                },
+                cache: "no-cache",
+                body: JSON.stringify(newRecipe) //here you send the object
+            })
     }
 
     useEffect(() => { GetLangs() }, [])
